@@ -16,6 +16,7 @@ import { NavigationScreenPropsType } from './src/utils/types';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import TodoDetailScreen from './src/screen/TodoDetailScreen';
 
 const Stack = createNativeStackNavigator<NavigationScreenPropsType>();
 
@@ -24,6 +25,7 @@ export const RootNavigator = () => {
     <Stack.Navigator>
       <Stack.Screen name="LandingScreen" component={LaunchScreen} />
       <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="TodoScreen" component={TodoDetailScreen} />
     </Stack.Navigator>
   )
 }
